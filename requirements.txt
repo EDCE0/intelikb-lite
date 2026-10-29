@@ -1,0 +1,25 @@
+# InteliKB-Lite 依赖
+# 安装： /miniconda3/envs/myenv/bin/python -m pip install -r requirements.txt
+
+# 核心：LlamaIndex
+llama-index-core>=0.14.0
+llama-index-vector-stores-chroma>=0.6.0
+
+# 大模型：DeepSeek 官方 OpenAI 兼容接口，直接用 openai SDK
+openai>=1.40.0
+
+# 向量化：DeepSeek 没有 embedding 接口，使用本地中文向量模型
+sentence-transformers>=3.0.0
+transformers>=4.40.0
+torch>=2.0.0
+
+# 向量数据库
+chromadb>=1.0.0
+
+# 文档解析
+pypdf>=4.0.0
+docx2txt>=0.8
+python-dotenv>=1.0.0
+
+# Web 界面
+streamlit>=1.32.0
